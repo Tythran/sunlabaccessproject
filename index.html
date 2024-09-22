@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUN Lab Access Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>SUN Lab Access Tracker</h1>
+
+    <div id="access-form">
+        <h2>Log Access</h2>
+        <input type="text" id="student-id" placeholder="Enter Student ID" required>
+        <button id="log-access">Log Access</button>
+    </div>
+
+    <div id="admin-form">
+        <h2>Admin Login</h2>
+        <input type="text" id="admin-username" placeholder="Admin Username" required>
+        <input type="password" id="admin-password" placeholder="Admin Password" required>
+        <button id="admin-login">Login</button>
+    </div>
+    <div id="admin-controls" style="display:none;">
+        <h2>User Management</h2>
+        <input type="text" id="new-user-id" placeholder="New User ID">
+        <input type="text" id="new-user-type" placeholder="User Type (student/faculty/staff)">
+        <button id="add-user">Add User</button>
+        <div id="manage-user">
+            <h3>Manage Users</h3>
+            <input type="text" id="manage-user-id" placeholder="User ID to Manage">
+            <select id="manage-action">
+                <option value="activate">Activate</option>
+                <option value="suspend">Suspend</option>
+                <option value="reactivate">Reactivate</option>
+            </select>
+            <button id="manage-user-button">Submit</button>
+        </div>
+    </div>
+
+    <div id="search-form" style="display:none;">
+        <h2>Search Access Records</h2>
+        <input type="date" id="start-date">
+        <input type="date" id="end-date">
+        <input type="text" id="search-id" placeholder="Search by Student ID">
+        <button id="search-access">Search</button>
+    </div>
+
+    <div id="results"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
