@@ -1,0 +1,11 @@
+Every time a student wants to get in or out, he/she MUST swipe his/her student card on the card reader device at the door. 
+The student ID number and the timestamp MUST be sent to the system and saved to a database. 
+These records MUST be stored for 5 years.
+
+At any time, an authorized person (admin) MUST be able to see the history of the SUN Lab access, and to browse the list of students, 
+filtered by date, by student ID, and by time range.
+There MUST be a GUI for the authorized person to perform the browse and the search.
+
+The system MUST be able to be extended in the future to support multiple types of users
+(students, faculty members, staff members, janitors) and the following additional operations:
+activate, suspend, and reactivate an ID via an admin account.
